@@ -1,0 +1,265 @@
+/* /////////////////////////////////////////////// STArt ABOUT PAGE Achievement/////// */
+
+.sec__About__Achievement {
+    padding: 150px 0px;
+}
+
+.about__achievement {
+    /* display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    ;
+    gap: 70px;
+}
+
+.left__side img {
+    width: 100%;
+}
+
+.right__side h2 {
+    font-size: 40px;
+}
+
+.right__side p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.achievement__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.card_achieve {
+    background-color: var(--color-bg1);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.card_achieve:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    background-color: var(--color-bg2);
+}
+
+.card_achieve span {
+    font-size: 50px;
+}
+
+.card_achieve .ach_span1 {
+    color: var(--color-danger);
+}
+
+.card_achieve .ach_span2 {
+    color: var(--color-success);
+}
+
+.card_achieve .ach_span3 {
+    color: var(--color-primary);
+}
+
+
+
+/* /////////////////////////////////////////////// STArt Achievement/////// */
+
+/* ///////////////////////////////////////////start Team section  Styling /////////////////////////////////  */
+.sec__Our__Team {
+    background-color: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    padding: 30px 0px;
+}
+
+.main__container .title_sec {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.Crads__Team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.img__team img {
+    /* margin: 10px; */
+    width: 100%;
+    border-radius: 20px;
+    filter: saturate(0);
+}
+
+.img__team:hover img {
+    filter: saturate(1);
+
+}
+
+.card__team {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--color-bg2);
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card__team:hover {
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+
+}
+
+.card__team:hover .team__social {
+    right: 0;
+}
+
+.team__social {
+    border-radius: 15px 0 0 15px;
+    background-color: var(--color-primary);
+    padding: 0 20px;
+    position: absolute;
+    right: -100%;
+    top: 30%;
+    transition: all 0.5s;
+}
+
+.team__social a {
+    display: block;
+    margin: 25px 0px;
+}
+
+.card__team h2 {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.card__team p {
+    font-size: 13px;
+}
+
+
+/* ///////////////////////////////////////////End Team section  Styling /////////////////////////////////  */
+
+
+/* //////////////////////////////////////////////////////////// Start  media query/////////////////////////////////////////////////// */
+
+@media screen and (max-width:480px) {
+    .main__container {
+        width: 95%;
+    }
+
+    .about__achievement {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .achievement__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .right__side p {
+        font-size: 16px;
+    }
+
+    .Crads__Team {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .ul__menu {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .main__container {
+        width: 90%;
+    }
+
+    .about__achievement {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .right__side p {
+        font-size: 20px;
+    }
+
+    .achievement__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Crads__Team {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+
+    .main__container {
+        width: 90%;
+    }
+
+    .about__achievement {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .left__side {
+        text-align: center;
+    }
+
+    .left__side img {
+        width: 600px;
+    }
+
+    .right__side p {
+        font-size: 22px;
+        line-height: 2.5;
+    }
+
+    .achievement__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Crads__Team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    .main__container {
+        width: 90%;
+    }
+
+    .sec__nav {
+        padding: 0;
+    }
+
+    .achievement__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Crads__Team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* //////////////////////////////////////////////////////////// End  media query/////////////////////////////////////////////////// */
